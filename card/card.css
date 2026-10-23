@@ -20,7 +20,7 @@ main{
 }
 #card{
     height: 40%;
-    width: 50%;
+    width: 45%;
     background-color: white;
     border: 2px solid beige;
     border-radius: 25px;
@@ -34,28 +34,33 @@ main{
 
 h2{
     position: absolute;
-    top: 18px;
+    top: 15%;
     text-align: center;
 }
 
 .outer{
     height: 10%;
     width: 80%;
-    position: absolute;
-    border: 1px solid black;
+    position: relative;
+    border: 3px solid black;
+    padding: 2px;
     border-radius: 25px;
-    top: 70px;
+    overflow: hidden;
+    bottom: 10%;
 }
 
 #inner{
-    height: 10%;
+    gap: 10px;
+    height: 100%;
     width: 0%;
     background-color: greenyellow;
-   
     border-radius: 25px;
-     top: 70px;
-     position: absolute;
+       position: absolute;
+     top: 0%;
+     left: 0%;
+  
 }
+
 
 .bottom{
     display: flex;
@@ -64,13 +69,13 @@ h2{
 
 h1{
     position: absolute;
-    right: 210px;
+    right: 160px;
     font-size: 50px;
 }
 
 button{
     position: absolute;
-    left: 180px;
+    left: 135px;
     padding: 10px;
     font-size: 20px;
     border-radius: 10px;

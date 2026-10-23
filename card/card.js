@@ -5,16 +5,22 @@ var grow = 0;
 
 btn.addEventListener('click', function(){
 
- setInterval(() => {
+    var num = 50 + Math.floor(Math.random()*50)
+    console.log(num)
+ var int = setInterval(() => {
         grow++;
         h1.innerHTML = grow + '%'
-        btn.innerHTML = "Downloaded"
+        btn.innerHTML = "Downloading"
         btn.style.opacity= 0.5
         btn.style.pointerEvents= "none";
-        tf.style.width = grow  + '%'
+        tf.style.width = grow + '%';
         
-    }, 500);
-
+    }, num);
+    
+    setTimeout(() => {
+        clearInterval(int)
+        btn.innerHTML = "Downloaded"
+    }, num*100);
 
 
 })
